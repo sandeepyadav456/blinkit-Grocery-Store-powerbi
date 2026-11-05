@@ -49,7 +49,6 @@ The report is built on a single table, **`BlinkIT_Grocery_Data_Raw`**, covering 
 | `Avg_Weight` | Average item weight |
 | `Avg_Sales_Per_Outlet` | Total sales divided by number of outlets |
 
-<!-- Optional: paste your DAX formulas here in a ```DAX code block -->
 
 ### 🧹 Data Cleaning
 - **Item fat content:** standardised inconsistent labels (e.g. "LF", "low fat", "reg") into two clean categories, **Low Fat** and **Regular**.
@@ -67,7 +66,7 @@ High-level view of the business.
 - **Visuals:** Top performing product categories, Total Sales by outlet location type (donut), Total Sales by outlet established year (line)
 - **Slicers:** Outlet establishment year, outlet size, outlet location type, item fat content
 
-![Executive Summary](images/executive-summary.png)
+![Executive Summary](executive-summary.png)
 
 ### 2. Product & Outlet Analysis
 Connects item attributes to sales.
@@ -75,7 +74,7 @@ Connects item attributes to sales.
 - **Visuals:** Sales by outlet type, Sales by rating, Sales by item fat content, Sales by outlet size, Sales by item type vs item visibility (bubble/scatter)
 - **Slicers:** Fat content, location type, outlet size, establishment year, outlet type
 
-![Product & Outlet Analysis](images/product-outlet-analysis.png)
+![Product & Outlet Analysis](product-outlet-analysis.png)
 
 ### 3. Outlet Performance
 Outlet-level drill-down.
@@ -83,7 +82,7 @@ Outlet-level drill-down.
 - **Visuals:** Sales by outlet identifier, Sales by outlet type, Sales by establishment year, detailed outlet table (sales, items, rating, visibility, weight, size)
 - **Slicers:** Location type, outlet size, establishment year
 
-![Outlet Performance](images/outlet-performance.png)
+![Outlet Performance](outlet-performance.png)
 
 ---
 
@@ -116,15 +115,6 @@ Outlet-level drill-down.
 
 ---
 
-## 💡 Recommendations
-1. **Prioritise Supermarket formats in expansion budgets**; Grocery Store outlets deliver markedly lower sales per outlet.
-2. **Invest in Tier 3 and Tier 2 locations**, which together account for ~72% of sales.
-3. **Rebalance shelf visibility** toward categories that sell well but get little visibility, and reduce space for high-visibility, low-sales items.
-4. **Don't use ratings as the only assortment filter**; combine them with sales velocity and visibility.
-5. **Plan expansion by format, not by outlet age.**
-
----
-
 ## ⚠️ Limitations & Next Steps
 - **Small sample:** only 10 outlets, so format and age comparisons are based on very few data points per group.
 - **No time dimension:** there is no date field, so seasonality and sales trends can't be analysed.
@@ -145,15 +135,14 @@ Outlet-level drill-down.
 ## 📁 Repository Structure
 ```
 ├── Blinkit_Grocery_Store.pbix   # Power BI report file
-├── images/                      # Dashboard screenshots
-│   ├── executive-summary.png
-│   ├── product-outlet-analysis.png
-│   └── outlet-performance.png
-├── data/                        # Dataset (CSV/Excel)
-└── README.md
+                     # Dashboard screenshots
+├── executive-summary.png
+|── product-outlet-analysis.png
+│── outlet-performance.png
+├─ README.md
 ```
 
-> Update the file names above to match your repository.
+
 
 ## ▶️ How to Use
 1. Clone or download this repository.
